@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr: #8b8888;
+    --clr1: #fff;
+    --clr2: blue;
+    --clr3: pink;
+}
+body {
+    background: linear-gradient(90deg, rgb(63, 172, 250), blue);
+    min-height: 100vh;
+    color: orangered;
+
+}
+
+
+.weather_title1 {
+    flex-wrap: nowrap;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Roboto Light";
+    margin-bottom: 100px;
+
+}
+.items {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.weather_title {
+    flex-wrap: nowrap;
+
+    text-align: center;
+    font-weight: 700;
+    font-family: "Roboto Light";
+
+
+}
+.temp {
+    flex-wrap: nowrap;
+
+    text-align: center;
+    font-weight: 700;
+    font-family: "Roboto Light";
+
+
+}
+
+.weater_item {
+    text-align: center;
+    position:relative;
+    width: 200px;
+    height: 75px;
+    background-color: #e0d4d4;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid greenyellow;
+    margin-top: 50px;
+}
+
+.weater_item:hover{
+    left: 5px;
+    background-color: rgb(199, 243, 56);
+}
+.gorod{
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%)
+
+
+}
+.weather_title1 span {
+    position: relative;
+    display: table-cell;
+    animation:jumb 2s infinite;
+}
+.weather_title1 span:nth-child(1) {
+    animation-delay:0s;
+}
+.weather_title1 span:nth-child(2) {
+    animation-delay:.1s;
+}
+.weather_title1 span:nth-child(3) {
+    animation-delay:.2s;
+}
+.weather_title1 span:nth-child(4) {
+    animation-delay:.3s;
+}
+.weather_title1 span:nth-child(5) {
+    animation-delay:.4s;
+}
+.back span:nth-child(6) {
+    animation-delay:.5s;
+}
+
+@keyframes jumb {
+    0% {
+        transform:translateY(0px)
+    }
+    50% {
+        transform:translateY(-30px);
+        box-shadow:0 15px 0 rgb(242, 198, 64);
+    }
+    100% {
+        transform:translateY(0px)
+    }
+}
